@@ -14,6 +14,12 @@ Service boundary -> access control -> scheduled work -> validation gate -> logs 
 
 The package focuses on the operational questions around AI systems: how they are accessed, checked, monitored and handed over.
 
+## Technical evidence contract
+
+The internal environment included services, scheduled jobs, TLS, VPN-restricted administration and validation gates. The evidence also recorded a red master gate, an untested restore procedure and repository-to-server drift risk. This package does not claim hardened production readiness.
+
+Reviewers can inspect the redacted topology, health-check pattern and incident decision record without access to a private server. No addresses, credentials or private routes are included.
+
 Architecture source: `architecture.mmd`.
 
 ## Review points
